@@ -32,7 +32,7 @@ function randomize(){
 }
 
 function displayComp(yourChoice, weapon){
-    compChoice.innerHTML = `<img src="/images/enemy_`+ weapon +`.png" alt="`+weapon+`">`;
+    compChoice.innerHTML = `<img src="./images/enemy_`+ weapon +`.png" alt="`+weapon+`">`;
     const winorlose = yourChoice.getAttribute("data-" + weapon);
     displayJudge(winorlose);
 }
