@@ -1,0 +1,140 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+head, script {
+  display: none;
+}
+
+.win {
+  color: yellow;
+}
+
+.lose {
+  color: blue;
+}
+
+.draw {
+  color: purple;
+}
+
+#grid-container {
+  display: -ms-grid;
+  display: grid;
+  padding: 10px;
+  background-color: aquamarine;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.grid-item {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.grid-item span {
+  display: inline-block;
+}
+
+.grid-item-1, .grid-item-2, .grid-item-3 {
+  background-color: #093426;
+  color: white;
+}
+
+.grid-item-4, .grid-item-5 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.grid-item-6 img, .grid-item-7 img, .grid-item-8 img {
+  height: auto;
+}
+
+.grid-item-6 img:hover, .grid-item-7 img:hover, .grid-item-8 img:hover {
+  border: 10px solid #fadef4;
+}
+
+#compchoice img {
+  width: auto;
+  height: inherit;
+}
+
+#judgement {
+  font-variant: small-caps;
+  font-family: sans-serif;
+}
+
+.grid-item-5 img {
+  height: auto;
+}
+
+.grid-item-5 span {
+  width: 100%;
+}
+
+.scoreName, .scoreSpan {
+  width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  #grid-container {
+    -ms-grid-columns: 33.3% 33.3% 33.3%;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    width: 90%;
+    margin: auto;
+  }
+  *, *::before, *::after {
+    font-weight: bold;
+    font-size: 40px;
+  }
+  .grid-item-6 img, .grid-item-7 img, .grid-item-8 img {
+    width: 20vw;
+  }
+  #compchoice {
+    background-color: brown;
+    height: 25vh;
+  }
+  #judgement {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #grid-container {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .grid-item-1, .grid-item-8 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  #judgement {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  #compchoice {
+    height: 25vh;
+  }
+  .grid-item-6 img, .grid-item-7 img, .grid-item-8 img {
+    width: 25vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #compchoice {
+    height: 20vh;
+  }
+  .grid-item-6 img, .grid-item-7 img, .grid-item-8 img {
+    width: 30vw;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

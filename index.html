@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body onresize="checkSize()">
+    <div id="grid-container">
+        <div class="grid-item grid-item-1">
+            <span class="scoreName winName">Win</span>
+            <span class="scoreSpan" id="win">0</span>
+        </div>
+        <div class="grid-item grid-item-2">
+            <span class="scoreName loseName">Lose</span>
+            <span class="scoreSpan" id="lose">0</span>
+        </div>
+        <div class="grid-item grid-item-3" >
+            <span class="scoreName drawName">Draw</span>
+            <span class="scoreSpan" id="draw">0</span>
+        </div>
+        <div class="grid-item grid-item-4">
+            <span id="judgement">PLAY</span>
+        </div> 
+        <div class="grid-item grid-item-5">
+            <span id="compchoice">
+                <img src="./images/enemy_template.png" alt="empty" id="empty">
+            </span>
+            <span id="comp-label">PLAY</span>
+        </div>
+        <div class="grid-item grid-item-6">
+            <img src="./images/rock_icon.png" alt="rock" id="rock" class="yourchoice" data-rock="draw" data-paper="lose" data-scissors="win">      
+        </div>
+        <div class="grid-item grid-item-7">
+            <img src="./images/paper_icon.png" alt="paper" id="paper" class="yourchoice" data-rock="win" data-paper="draw" data-scissors="lose">
+        </div>
+        <div class="grid-item grid-item-8">
+            <img src="./images/scissor_icon.png" alt="scissors" id="scissors" data-rock="lose" data-paper="win" data-scissors="draw" class="yourchoice">
+        </div>
+    </div>
+    <span id="dimensions"></span>    
+</body>
+</html>
