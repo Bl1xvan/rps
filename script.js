@@ -1,18 +1,6 @@
 const judgement = document.getElementById("judgement");
 const compChoice = document.getElementById("compchoice");
 const compLabel = document.getElementById("comp-label");
-const dimensions = document.getElementById("dimensions");
-
-function checkSize(){
-    const height = this.innerHeight;
-    const width = this.innerWidth;
-    const txt = "H: " + height + " W: " + width;
-    dimensions.innerText = txt;
-}
-
-//go back to the attributes route
-
-//Any way to add points?
 
 const weapons = ["rock", "paper", "scissors"];
 document.addEventListener("click", gameOn);
@@ -32,7 +20,7 @@ function randomize(){
 }
 
 function displayComp(yourChoice, weapon){
-    compChoice.innerHTML = `<img src="./images/enemy_`+ weapon +`.png" alt="`+weapon+`">`;
+    compChoice.innerHTML = `<i class="fa fa-hand-${weapon}-o"></i>`;
     const winorlose = yourChoice.getAttribute("data-" + weapon);
     displayJudge(winorlose);
 }
