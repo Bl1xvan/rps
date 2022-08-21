@@ -26,7 +26,7 @@ body{
 }
 
 #compchoice{
- border: 3px solid #535455;
+ border: 5px solid #417142;
 }
 
 .yourchoice{
@@ -88,12 +88,14 @@ body{
 
 #compchoice{
   width: 60%;
+background-image: linear-gradient(to bottom, rgba(255, 243, 55, .3), rgba(200, 243, 55, .5))
 }
 
 #compchoice > i{
   font-size: 6em;
   animation-name: spinning;
   animation-duration: .5s;
+  color: #bb2f0c;
 }
 
 @keyframes spinning{
