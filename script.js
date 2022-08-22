@@ -26,7 +26,7 @@ function displayComp(yourChoice, weapon){
 }
 
 function displayJudge(winorlose){
-    judgement.innerHTML = winorlose;
-    judgement.setAttribute("class", winorlose);
+    judgement.innerHTML = `<span class="${winorlose}">${winorlose}</span>`;
+    
     document.getElementById(winorlose).innerText = parseInt(document.getElementById(winorlose).innerText) + 1;
 }
